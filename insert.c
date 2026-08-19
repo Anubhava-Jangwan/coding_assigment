@@ -25,15 +25,18 @@
 #include <stdio.h>
 int main() {
     int n;
+    printf("Enter the number of elements: ");
     scanf("%d", &n);
-    int arr[n];
     printf("Enter %d elements:\n", n);
+    int arr[n];
     for (int i = 0; i < n; i++) {
         printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     int pos, x;
+    printf("Enter the position where you want to insert the element: ");
     scanf("%d", &pos);
+    printf("Enter the element to insert: ");
     scanf("%d", &x);
     for (int i = n - 1; i >= pos - 1; i--) {
         arr[i + 1] = arr[i];
