@@ -1,0 +1,33 @@
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        makezero(int i ,int j){
+        for (int k=0;k<n;k++){
+            for (int l =0 ; l<m;l++){
+                if (k==i || l == j){
+                    matrix[k][l]==0;
+
+                }
+
+            }
+        }
+
+
+        }
+
+
+        n=matrix.length;
+        m=matrix[0].length;
+        for (int i=0;i<n;i++){
+            for (int j =0 ; j<m;j++){
+                if (matrix[i][j]==0){
+                    makezero(i,j);
+                    continue;
+
+                }
+            }
+        }
+
+
+
+    }
+}
